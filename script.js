@@ -349,11 +349,11 @@ let songs = [
         audioSrc: "audio/welcomeandgoodbye.mp3",
         videoBgSrc: "videos/welcome_and_goodbye_bg.mp4",
         lyrics: [
-<<<<<<< HEAD
+
           { time: 42, text: "Through it all once again, came to know my only friend" },
-=======
+
             { time: 42, text: "Through it all once again, came to know my only friend" },
->>>>>>> 66ce037aaadf06aa35c65f9eecb023ecda8228a6
+
             { time: 49, text: "Lost control, can't begin, I seek within" },
             { time: 58.9, text: "To feel the warmth brought within your skin" },
             { time: 62, text: "Did you know, for how it seemed" },
