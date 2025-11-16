@@ -464,18 +464,16 @@ let songs = [
         artist: "Radiohead",
         album: "OK Computer",
         albumArtUrl: "https://images.genius.com/ea1fda114f5091bce67f87cf8437b647.1000x1000x1.png",
-        audioSrc: "audio/letdown.mp3",
+        audioSrc: "audio/Letdown(silentvoice).mp3",
         videoBgSrc: "videos/Letdown(silentvoice).mp4",
         lyrics: [
-            { time: 0.2  ,  text: "Floor collapsing Floating" },
-            { time: 5,  text: "bouncing back and " },
-            { time: 7, text: "One day, I am gonna grow wings" },
-            { time: 14.2, text: "A chemical reaction" },
-            { time: 17.9, text: "Hysterical and useless" },
-            { time: 23, text: "Hysterical and" },
-            { time: 26, text: "Let down and hanging around" },
-            { time: 33, text: "Crushed like a bug in the ground" },
-            { time: 40, text: "Let down and hanging around" }
+            { time: 9.2, text: "You know, you know where you are with" },
+{ time: 17., text: "You know where you are with" },
+{ time: 22., text: "Floor collapses, floating" },
+{ time: 26.9, text: "Bounching back" },
+{ time: 29.0, text: "And one day, i am gonna grow wings" },
+
+
 
         ]
     },
