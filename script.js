@@ -363,36 +363,7 @@ let songs = [
         ]
     },
     {
-        id: 8,
-        title: "Let Down",
-        artist: "Radiohead",
-        album: "OK Computer",
-        albumArtUrl: "",
-        audioSrc: "audio/radiohead_let_down.mp3",
-        videoBgSrc: "videos/let_down_bg.mp4",
-        lyrics: [
-            { time: 0, text: "Transport, motorways and tramlines" },
-            { time: 6, text: "Starting and then stopping" },
-            { time: 10, text: "Taking off and landing" },
-            { time: 14, text: "The emptiest of feelings" },
-            { time: 18, text: "Disappointed people" },
-            { time: 22, text: "Clinging onto bottles" },
-            { time: 26, text: "And when it comes it's so, so disappointing" },
-            { time: 32, text: "Let down and hanging around" },
-            { time: 37, text: "Crushed like a bug in the ground" },
-            { time: 42, text: "Let down and hanging around" },
-            { time: 48, text: "Shell smashed, juices flowing" },
-            { time: 53, text: "Wings twitch, legs are going" },
-            { time: 58, text: "Don't get sentimental" },
-            { time: 61, text: "It always ends up drivel" },
-            { time: 65, text: "One day I am gonna grow wings" },
-            { time: 70, text: "A chemical reaction" },
-            { time: 74, text: "Hysterical and useless" },
-            { time: 78, text: "Hysterical and" },
-            { time: 82, text: "Let down and hanging around" },
-            { time: 87, text: "Crushed like a bug in the ground" },
-            { time: 92, text: "Let down and hanging around" }
-        ]
+     
     },
     {
         id: 9,
