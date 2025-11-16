@@ -346,20 +346,20 @@ let songs = [
         artist: "Dream, Ivory",
         album: "Welcome and Goodbye",
         albumArtUrl: "",
-        audioSrc: "audio/dream_ivory_welcome_and_goodbye.mp3",
+        audioSrc: "audio/welcomeandgoodbye.mp3",
         videoBgSrc: "videos/welcome_and_goodbye_bg.mp4",
         lyrics: [
-            { time: 0, text: "Through it all once again, came to know my only friend" },
-            { time: 7, text: "Lost control, can't begin, I seek within" },
-            { time: 13, text: "To feel the warmth brought within your skin" },
-            { time: 19, text: "Did you know, for how it seemed" },
-            { time: 24, text: "I should've stayed and let you be" },
-            { time: 29, text: "Run into my heart so carelessly" },
-            { time: 34, text: "That's the reason I'm afraid" },
-            { time: 39, text: "You're thoughts that can't be tamed" },
-            { time: 44, text: "And I'm trying to be sane" },
-            { time: 49, text: "And I'm trying to be sane" },
-            { time: 53, text: "And I'm trying to be sane" }
+            { time: 42, text: "Through it all once again, came to know my only friend" },
+            { time: 49, text: "Lost control, can't begin, I seek within" },
+            { time: 58.9, text: "To feel the warmth brought within your skin" },
+            { time: 102, text: "Did you know, for how it seemed" },
+            { time: 113.8, text: "I should've stayed and let you be" },
+            { time: 120, text: "Run into my heart so carelessly" },
+            { time: 126, text: "That's the reason I'm afraid" },
+            { time: 130, text: "You're thoughts that can't be tamed" },
+            { time: 133, text: "And I'm trying to be sane" },
+            { time: 141, text: "And I'm trying to be sane" },
+            { time: 146, text: "And I'm trying to be sane" }
         ]
     },
     {
