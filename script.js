@@ -10,6 +10,13 @@ const bodyElement = document.body;
 
 const backgroundVideoContainer = document.querySelector('.video-background-container');
 const backgroundVideo = document.getElementById('backgroundVideo');
+// Helper untuk menghindari cache browser ketika file video berubah
+function getCacheBustedVideoSrc(src) {
+    if (!src) return src;
+    // Jika sudah ada query string, tambahkan parameter baru dengan &
+    const separator = src.includes('?') ? '&' : '?';
+    return `${src}${separator}v=${Date.now()}`;
+}
 
 // Elemen untuk Halaman Detail Lagu (tidak akan langsung digunakan saat klik lagu, tapi tetap di-load)
 const detailAlbumArt = document.getElementById('detailAlbumArt');
@@ -425,7 +432,7 @@ let songs = [
         title: "Where We Are",
         artist: "One Direction",
         album: "Midnight Memories (Deluxe Edition)",
-        albumArtUrl: "",
+        albumArtUrl: "https://pin.it/5P7EliDck",
         audioSrc: "audio/one_direction_where_we_are.mp3",
         videoBgSrc: "videos/where_we_are_bg.mp4",
         lyrics: [
@@ -524,7 +531,8 @@ function showPlayerPage() {
 
     const currentSong = songs[currentSongIndex];
     if (currentSong && currentSong.videoBgSrc) {
-        backgroundVideo.src = currentSong.videoBgSrc;
+        // Pastikan browser memuat file baru jika ada perubahan (cache-bust)
+        backgroundVideo.src = getCacheBustedVideoSrc(currentSong.videoBgSrc);
         backgroundVideo.load();
         backgroundVideo.play().catch(e => console.error("Error playing video background:", e));
     } else {
@@ -563,7 +571,7 @@ function renderSongList() {
         listItem.addEventListener('mouseenter', () => {
             // Hanya aktifkan video background jika kita di halaman home
             if (homePage.classList.contains('active') && song.videoBgSrc) {
-                backgroundVideo.src = song.videoBgSrc;
+                backgroundVideo.src = getCacheBustedVideoSrc(song.videoBgSrc);
                 backgroundVideo.load();
                 backgroundVideoContainer.classList.add('active');
                 backgroundVideo.play().catch(e => console.error("Error playing video on hover:", e));
@@ -576,6 +584,7 @@ function renderSongList() {
                 backgroundVideoContainer.classList.remove('active');
                 backgroundVideo.pause(); // Jeda video saat mouse meninggalkan
                 backgroundVideo.src = ""; // Kosongkan src agar tidak memutar di background
+                backgroundVideo.src = getCacheBustedVideoSrc(song.videoBgSrc);
                 backgroundVideo.load();
                 bodyElement.classList.remove('player-active-bg'); // Hapus kelas warna background body
             }
