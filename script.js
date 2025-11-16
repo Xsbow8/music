@@ -215,7 +215,7 @@ let songs = [
         album: "OK Computer",
         albumArtUrl: "https://www.songmeaningsandfacts.com/wp-content/uploads/2022/11/Message-in-a-Bottle-by-Taylor-Swift.jpg",
         audioSrc: "audio/bocil.mp3",
-        videoBgSrc: "videos/bocil.mp4",
+        videoBgSrc: "videos/Furina.mp4",
         lyrics: [
             { time: 0  ,  text: "Cause you could be the one that I love" },
             { time: 4,  text: "I could be the one that you dream of " },
@@ -292,7 +292,7 @@ let songs = [
         album: "AM",
         albumArtUrl: "https://i.ytimg.com/vi/fJLQCf4mFP0/hqdefault.jpg",
         audioSrc: "audio/I Wanna Be Yours.mp3",
-        videoBgSrc: "videos/i_wanna_be_yours_bg.mp4",
+        videoBgSrc: "videos/myistri.mp4",
         lyrics: [
             { time: 1000, text: "I wanna be your vacuum cleaner" },
             { time: 1000, text: "Breathing in your dust" },
